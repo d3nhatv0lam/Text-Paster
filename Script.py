@@ -25,14 +25,18 @@ print(data)
 
 print("Press F2 to Copy this!") 
 
-keyboard.wait("F2")
-pyautogui.PAUSE = 0.01
+keyboard.wait("F4")
+pyautogui.PAUSE = 0.012
 
 
 
 def isStop():
     if keyboard.is_pressed('Esc'):
         sys.exit(0)
+
+def clean(char):
+    if char == '{' or char == '[' or char == '<' or char == '(' or char == '"' or char == "'":
+        pyautogui.press('delete')
 
 def Default_Paste():
 
@@ -43,7 +47,7 @@ def Default_Paste():
         pyautogui.press('Enter')
 
 def Python_Paste():
-
+    # tính toán số lần tab hoặc alt tab
     CurLspace = len(Line[0]) - len(Line[0].lstrip())
     defaultspace = 4
 
@@ -61,14 +65,12 @@ def Python_Paste():
                     time.sleep(0.1)
                     pyautogui.keyUp('shift')
             CurLspace = backspaceCnt
-
-
-        if line != '':
             line += ' '
 
         for char in line:
             isStop()
             pyautogui.press(char)
+            clean(char)
 
         pyautogui.press("Enter")
 
@@ -83,6 +85,7 @@ def C_Cpp_Paste():
         for char in line:
             isStop()
             pyautogui.press(char)
+            clean(char)
         pyautogui.press('Enter')
 
 
