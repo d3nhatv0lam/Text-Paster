@@ -5,29 +5,29 @@ import pyautogui
 import unidecode
 import sys , time
 
+
 root = tk.Tk()
 root.withdraw()
 
-print("Load data: ")
-file_path = filedialog.askopenfilename()
-
-try:
-    with open(file_path,'r',encoding='utf-8') as f:
-        data = f.read()
-        data = unidecode.unidecode(data)
-except:
-    print("Pls Choose Code File or Txt File")
-    sys.exit(0)
+Line = []
 
 
-Line = data.split("\n")
-print(data)
+# Load Text
+def LoadData():
+    print("Load data: ")
+    global file_path
+    file_path = filedialog.askopenfilename()
 
-print("Press F2 to Copy this!") 
+    try:
+        with open(file_path,'r',encoding='utf-8') as f:
+            data = f.read()
+            data = unidecode.unidecode(data)
+            print(data)
+    except:
+        print("Pls Choose Code File or Txt File")
+        sys.exit(0)
 
-keyboard.wait("F4")
-pyautogui.PAUSE = 0.012
-
+    return data.split("\n")
 
 
 def isStop():
@@ -35,8 +35,12 @@ def isStop():
         sys.exit(0)
 
 def clean(char):
-    if char == '{' or char == '[' or char == '<' or char == '(' or char == '"' or char == "'":
-        pyautogui.press('delete')
+    match char:
+        case '{' | '[' | '<' | '(' | '"' | '"':
+            pyautogui.press('delete')
+        case _:
+            pass
+
 
 def Default_Paste():
 
@@ -91,6 +95,7 @@ def C_Cpp_Paste():
 
 
 def Paste(extension):
+    keyboard.wait("F2")
 
     match extension:
         case "py":
@@ -103,6 +108,18 @@ def Paste(extension):
             Default_Paste()
 
 
-Paste(file_path.split(".")[-1])
+def Introduce():
+    print("---------------")
+    print("Tool was created by D3n")
+    print("hope u feel good with my tool <3")
+    print("#Note: U shoud keep the scene when tool is running")
+    print("#Note: Press Esc when tool is running to Stop Copy")
+    print("---------------")
 
 
+if __name__ == "__main__":
+    Introduce()
+    pyautogui.PAUSE = 0.012
+    Line = LoadData()
+    print("Press F2 to Copy this!") 
+    Paste(file_path.split(".")[-1])
