@@ -10,7 +10,7 @@
 > 1. Make sure this is correctly Text you want to paste. This text would be showed after you had chosen file in Console
 > 1. click to desinaton where you need paste, then press F2
 > 1. Wait for tool work
-> #### **\#Note:**
+> #### <u>**\#Note:**</u>
 > - while tool was running, you must keep  this web or destinaton, or your sceen will loss control xD
 > - To ${\color{red}Emergency \space stop}$, Pls Press **Esc**.
 
