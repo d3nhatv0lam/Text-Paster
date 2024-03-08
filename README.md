@@ -4,6 +4,7 @@
 # Introduction
 - This Tool is used to paste a text file as `txt`, `py` , `c`, `cpp`, `...` in your PC to a website or anywhere can write text.
 - You can paste this text in file into a web which forbid paste by using hotkey `Ctrl V`
+- Some spectial text file can't paste correctly as java , js,... because foreach language has a different syntax. I'll try to check that
 # Guide
 > <ins>**- Firstly, you shoud download my tool.**</ins>
 > 1. Open tool, choose file need to paste
