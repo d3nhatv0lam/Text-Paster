@@ -10,9 +10,11 @@
 > 1. Make sure this is correctly Text you want to paste. This text would be showed after you had chosen file in Console
 > 1. click to desinaton where you need paste, then press F2
 > 1. Wait for tool work
-> ####**\#Note:**
+> #### **\#Note:**
 > - while tool was running, you must keep  this web or destinaton, or your sceen will loss control xD
-> - To <font color=#FF0000> Emergency stop </font>, Pls Press **Esc**.
+>  To ${\color{red}Emergency \space stop}$, Pls Press **Esc**.
+>
+> Emergency stop
 
 #<u>References</u>
 - This tool was created because i seen a student in `Hutech` need some help to paste code into  Hutech's online judge
