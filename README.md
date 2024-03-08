@@ -12,7 +12,7 @@
 > 1. Wait for tool work
 > #### **\#Note:**
 > - while tool was running, you must keep  this web or destinaton, or your sceen will loss control xD
->  To ${\color{red}Emergency \space stop}$, Pls Press **Esc**.
+>  To $${\color{red}Emergency \space stop}$$, Pls Press **Esc**.
 >
 > Emergency stop
 
