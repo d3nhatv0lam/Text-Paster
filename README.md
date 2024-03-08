@@ -12,9 +12,8 @@
 > 1. Wait for tool work
 > #### **\#Note:**
 > - while tool was running, you must keep  this web or destinaton, or your sceen will loss control xD
->  To $${\color{red}Emergency \space stop}$$, Pls Press **Esc**.
->
-> Emergency stop
+> - To ${\color{red}Emergency \space stop}$, Pls Press **Esc**.
+
 
 #<u>References</u>
 - This tool was created because i seen a student in `Hutech` need some help to paste code into  Hutech's online judge
